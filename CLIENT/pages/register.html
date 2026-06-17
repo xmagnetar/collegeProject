@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Create Account</h1>
+
+    <form id="registerForm">
+        <input
+            type="userName"
+            id="userName"
+            placeholder="userName"
+            required
+        >
+        <input
+            type="fullName"
+            id="fullName"
+            placeholder="fullName"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+        >
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+        >
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <p>
+        Already have an account?
+        <a href="./login.html">
+            Login
+        </a>
+    </p>
+
+</div>
+
+<script src="../js/config.js"></script>
+<script src="../js/register.js"></script>
+
+</body>
+</html>
