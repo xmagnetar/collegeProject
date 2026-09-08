@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+
+
 *{
     margin:0;
     padding:0;
@@ -14,8 +16,8 @@ body{
     align-items:center;
     background:linear-gradient(
         135deg,
-        #667eea,
-        #764ba2
+        #0f6fae,
+        #14b8a6
     );
 }
 
