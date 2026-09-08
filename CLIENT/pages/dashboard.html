@@ -15,34 +15,56 @@
         </div>
 
         <div class="user-info">
-            <h2 id="fullName">User Name</h2>
-            <p id="userName">@username</p>
-            <p id="email">email@gmail.com</p>
+            <h2 id="fullName">Welcome back User</h2>
         </div>
 
     </div>
 
     <h1>Dry Eye Detection</h1>
 
-    <div class="upload-section">
+<div class="upload-section">
 
-        <input
-            type="file"
-            id="imageInput"
-            accept="image/*"
-        >
+    <!-- Hidden normal upload -->
+    <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        hidden
+    >
 
-        <img
-            id="preview"
-            src=""
-            alt="Preview"
-        >
+    <!-- Hidden camera input -->
+    <input
+        type="file"
+        id="cameraInput"
+        accept="image/*"
+        capture="environment"
+        hidden
+    >
 
-        <button id="predictBtn">
-            Analyze Eye Image
+    <!-- Buttons -->
+    <div class="image-buttons">
+        <button type="button" id="uploadBtn">
+            Choose Image
         </button>
 
+        <button type="button" id="cameraBtn">
+            Take Photo
+        </button>
     </div>
+
+    <!-- Preview -->
+    <img
+        id="preview"
+        src=""
+        alt="Preview"
+        style="display: none;"
+    >
+
+    <button id="predictBtn">
+        Analyze Eye Image
+    </button>
+
+</div>
 
     <div id="result">
         Upload an image and click Analyze
