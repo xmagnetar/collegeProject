@@ -95,7 +95,7 @@ import User from "../models/user.model.js";
         .cookie("accessToken",accessToken,options)
         .cookie("refreshToken",refreshToken,options)
         .json({
-            user:loggedInUser,accessToken,refreshToken
+            user:loggedInUser
         })
     }catch(error){
         console.error("Error in loginUser:", error.message);
